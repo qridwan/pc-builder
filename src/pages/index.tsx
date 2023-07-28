@@ -10,11 +10,12 @@ import Meta from 'antd/es/card/Meta'
 import { EditOutlined, EllipsisOutlined, InfoCircleOutlined, MoreOutlined, SettingOutlined } from '@ant-design/icons'
 import ProductCard from '../components/ProductCard'
 import HomeBanner from '../components/home/HomeBanner'
-import FeaturedItems from '../components/home/FeaturedItems'
 import FeaturedCategories from '../components/home/FeaturedCategories'
+import { env } from '@/utils/envVariables'
+import ProductItems from '@/components/home/ProductItems'
 
 
-export default function Home() {
+export default function Home({ products }: { products: IProduct[] }) {
 	return (
 		<>
 			<Head>
@@ -24,8 +25,23 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<HomeBanner />
-			<FeaturedItems />
+			<ProductItems products={products} title='Featured Products' />
 			<FeaturedCategories />
 		</>
 	)
+}
+
+
+// This function gets called at build time on server-side.
+// It won't be called on client-side, so you can even do
+// direct database queries.
+export async function getStaticProps() {
+	const res = await fetch(env.apiUrl + '/featured')
+	const products: IProduct[] = await res.json()
+
+	return {
+		props: {
+			products,
+		},
+	}
 }
