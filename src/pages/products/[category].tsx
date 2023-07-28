@@ -1,9 +1,10 @@
-import ProductItems from "@/components/home/ProductItems";
+import ProductItems from "@/components/shared/ProductItems";
 import { env } from "@/utils/envVariables";
 import { useRouter } from "next/router";
 
 const Products = ({ products }: { products: IProduct[] }) => {
 	const router = useRouter();
+
 	return (
 		<div>
 			<ProductItems title={router?.query.category as string} products={products} />

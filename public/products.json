@@ -1,7 +1,7 @@
 [
   {
     "name": "AMD Ryzen 9 5950X",
-    "image": "https://example.com/products/cpu1.png",
+    "image": "https://cdn.pixabay.com/photo/2012/04/12/19/23/cpu-30273_960_720.png",
     "category": "CPU",
     "price": 749,
     "status": "In Stock",
@@ -22,7 +22,7 @@
   },
   {
     "name": "Intel Core i9-11900K",
-    "image": "https://example.com/products/cpu2.png",
+    "image": "https://cdn.pixabay.com/photo/2021/07/10/23/56/processor-6402603_960_720.png",
     "category": "CPU",
     "price": 539,
     "status": "In Stock",
@@ -48,7 +48,7 @@
   },
   {
     "name": "Intel Core i7-11700K",
-    "image": "https://example.com/products/cpu3.png",
+    "image": "https://cdn.pixabay.com/photo/2016/10/04/16/37/processor-1714820_960_720.png",
     "category": "CPU",
     "price": 399,
     "status": "In Stock",
@@ -74,7 +74,7 @@
   },
   {
     "name": "AMD Ryzen 5 5600X",
-    "image": "https://example.com/products/cpu4.png",
+    "image": "https://cdn.pixabay.com/photo/2016/10/27/03/44/processor-1773308_960_720.png",
     "category": "CPU",
     "price": 299,
     "status": "In Stock",
@@ -95,7 +95,7 @@
   },
   {
     "name": "MSI MAG B550 TOMAHAWK",
-    "image": "https://example.com/products/motherboard3.png",
+    "image": "https://cdn.pixabay.com/photo/2013/07/12/17/49/motherboard-152501_960_720.png",
     "category": "Motherboard",
     "price": 189,
     "status": "In Stock",
@@ -122,7 +122,7 @@
   },
   {
     "name": "ASRock B450 Steel Legend",
-    "image": "https://example.com/products/motherboard4.png",
+    "image": "https://img.freepik.com/premium-photo/processor-computer-circuit-board-with-microchips-generative-ai_788189-81.jpg",
     "category": "Motherboard",
     "price": 129,
     "status": "In Stock",
@@ -148,7 +148,7 @@
   },
   {
     "name": "ASUS ROG Strix X570-E Gaming",
-    "image": "https://example.com/products/motherboard1.png",
+    "image": "https://img.freepik.com/free-photo/closeup-electronic-circuit-board-with-cpu-microchip-electronic-components-background_1387-820.jpg?w=1380&t=st=1690583989~exp=1690584589~hmac=e18c6028839d0b1afe9dde320920ac66c3be2d7c1a460987223d8bbb39215ca8",
     "category": "Motherboard",
     "price": 319,
     "status": "In Stock",
@@ -175,7 +175,7 @@
   },
   {
     "name": "GIGABYTE B550 AORUS PRO",
-    "image": "https://example.com/products/motherboard2.png",
+    "image": "https://img.freepik.com/free-photo/smart-microchip-background-motherboard-closeup-technology_53876-124725.jpg?w=1380&t=st=1690584037~exp=1690584637~hmac=80890ae57a23535a292a7f020f7c6820a7cd45df841025974717ecbfd459675e",
     "category": "Motherboard",
     "price": 189,
     "status": "In Stock",
@@ -201,7 +201,7 @@
   },
   {
     "name": "Crucial Ballistix 32GB",
-    "image": "https://example.com/products/ram3.png",
+    "image": "https://img.freepik.com/free-photo/technology-background-texture_23-2148105477.jpg?w=826&t=st=1690584062~exp=1690584662~hmac=a385f64715849b9806763225f339a79c910de09f88f64585f5c007f75cc87178",
     "category": "RAM",
     "price": 149,
     "status": "In Stock",
@@ -226,7 +226,7 @@
   },
   {
     "name": "Corsair Vengeance LPX",
-    "image": "https://example.com/products/ram4.png",
+    "image": "https://img.freepik.com/free-vector/facebook-circuit-cover_23-2147654831.jpg?w=826&t=st=1690584138~exp=1690584738~hmac=a90b2c4de987fdfdfe54a91410ca6d72224df4ed22dae2afdd4d35cea44c7723",
     "category": "RAM",
     "price": 129,
     "status": "In Stock",
@@ -251,7 +251,7 @@
   },
   {
     "name": "Corsair Vengeance RGB Pro",
-    "image": "https://example.com/products/ram1.png",
+    "image": "https://img.freepik.com/premium-vector/computer-memory-ram-computer-hardware-components_268834-1095.jpg",
     "category": "RAM",
     "price": 169,
     "status": "In Stock",
@@ -277,7 +277,7 @@
   },
   {
     "name": "G.SKILL Trident Z Neo",
-    "image": "https://example.com/products/ram2.png",
+    "image": "https://img.freepik.com/premium-vector/real-random-access-memory-ram-computer_37787-862.jpg",
     "category": "RAM",
     "price": 189,
     "status": "In Stock",
@@ -303,7 +303,7 @@
   },
   {
     "name": "NVIDIA GeForce RTX 3060 Ti",
-    "image": "https://example.com/products/gpu3.png",
+    "image": "https://img.freepik.com/premium-photo/computer-with-square-that-says-dell-bottom_662214-24672.jpg?w=826",
     "category": "GPU",
     "price": 499,
     "status": "In Stock",
@@ -329,7 +329,7 @@
   },
   {
     "name": "AMD Radeon RX 6700 XT",
-    "image": "https://example.com/products/gpu4.png",
+    "image": "https://img.freepik.com/free-photo/circuit-cyberspace-closeup-with-neon-lights_90220-1200.jpg?t=st=1690584289~exp=1690587889~hmac=6525357e2f04b5dd7f4826f05d263760a09e8a8cf9e1505507262b436b174fb1&w=1380",
     "category": "GPU",
     "price": 579,
     "status": "In Stock",
@@ -355,7 +355,7 @@
   },
   {
     "name": "NVIDIA GeForce RTX 3080",
-    "image": "https://example.com/products/gpu1.png",
+    "image": "https://img.freepik.com/premium-vector/new-gpu-stock-announcement-label-flat-style-computer-video-graphic-card-device-advertising-illustration-hardware-component-shortage-notice-label-isolated_167715-4572.jpg?w=826",
     "category": "GPU",
     "price": 1099,
     "status": "Out of Stock",
@@ -381,7 +381,7 @@
   },
   {
     "name": "AMD Radeon RX 6800 XT",
-    "image": "https://example.com/products/gpu2.png",
+    "image": "https://img.freepik.com/free-photo/glowing-blue-flame-heats-semiconductor-equipment-indoors-generated-by-ai_188544-16554.jpg?t=st=1690584334~exp=1690587934~hmac=4082c1da4c456b3a9eef116c26d541f25f5d468a7e630ee7f3a505d658b955cb&w=1480",
     "category": "GPU",
     "price": 799,
     "status": "In Stock",
@@ -407,7 +407,7 @@
   },
   {
     "name": "Seasonic FOCUS GX-750",
-    "image": "https://example.com/products/psu3.png",
+    "image": "https://img.freepik.com/premium-photo/white-background-server-detail-photo_410516-39471.jpg?w=1380",
     "category": "Power Supply Unit",
     "price": 139,
     "status": "In Stock",
@@ -433,7 +433,7 @@
   },
   {
     "name": "be quiet! Straight Power 11",
-    "image": "https://example.com/products/psu4.png",
+    "image": "https://img.freepik.com/free-photo/futuristic-technology-illuminates-robotic-arm-laboratory-generated-by-ai_188544-29912.jpg?t=st=1690584476~exp=1690588076~hmac=019f3ec8793812db342f9284dbd78646e319629190814052f237bf939054cb30&w=1480",
     "category": "Power Supply Unit",
     "price": 159,
     "status": "In Stock",
@@ -459,10 +459,10 @@
   },
   {
     "name": "EVGA SuperNOVA 850 G5",
-    "image": "https://example.com/products/psu1.png",
+    "image": "https://img.freepik.com/premium-photo/bitcoin-mining-rig-with-processors-graphics-cards-visible_124507-114871.jpg?w=1380",
     "category": "Power Supply Unit",
     "price": 159,
-    "status": "In Stock",
+    "status": "Out of Stock",
     "average_rating": 4.7,
     "description": "The EVGA SuperNOVA 850 G5 offers reliable and efficient power delivery for high-end systems.",
     "features": [
@@ -485,7 +485,7 @@
   },
   {
     "name": "Corsair RM750x",
-    "image": "https://example.com/products/psu2.png",
+    "image": "https://img.freepik.com/premium-photo/gaming-computer-with-rgb-led-lighting-that-is-put-together-with-hardware_410516-27154.jpg?w=1380",
     "category": "Power Supply Unit",
     "price": 129,
     "status": "In Stock",
@@ -511,7 +511,7 @@
   },
   {
     "name": "Crucial MX500",
-    "image": "https://example.com/products/storage3.png",
+    "image": "https://img.freepik.com/premium-photo/hard-drive-with-black-background-orange-lighting_850197-2447.jpg?w=1480",
     "category": "Storage Device",
     "price": 99,
     "status": "In Stock",
@@ -537,7 +537,7 @@
   },
   {
     "name": "Seagate BarraCuda",
-    "image": "https://example.com/products/storage4.png",
+    "image": "https://img.freepik.com/free-photo/futuristic-human-holding-complex-computer-chip-capacitor-generated-by-ai_188544-26120.jpg?t=st=1690584670~exp=1690588270~hmac=8870cda7042357da16277fe70c67d5f569efb64a99cd416b41e24ab92d6f4cda&w=1480",
     "category": "Storage Device",
     "price": 59,
     "status": "In Stock",
@@ -563,7 +563,7 @@
   },
   {
     "name": "Samsung 970 EVO Plus",
-    "image": "https://example.com/products/storage1.png",
+    "image": "https://img.freepik.com/premium-photo/random-access-memory-ram_310178-710.jpg?w=1380",
     "category": "Storage Device",
     "price": 179,
     "status": "In Stock",
@@ -589,7 +589,7 @@
   },
   {
     "name": "Western Digital Blue",
-    "image": "https://example.com/products/storage2.png",
+    "image": "https://img.freepik.com/free-photo/view-hard-drive-with-blue-light_23-2149413380.jpg?w=740&t=st=1690584783~exp=1690585383~hmac=92fbb120477877b53ead61730791333278b4090e170fc9b3ff5e1516d56c161f",
     "category": "Storage Device",
     "price": 79,
     "status": "In Stock",
@@ -615,7 +615,7 @@
   },
   {
     "name": "Dell S2721DGF",
-    "image": "https://example.com/products/monitor3.png",
+    "image": "https://cdn.pixabay.com/photo/2012/04/13/15/03/monitor-32743_960_720.png",
     "category": "Monitor",
     "price": 449,
     "status": "In Stock",
@@ -641,7 +641,7 @@
   },
   {
     "name": "AOC CQ32G1",
-    "image": "https://example.com/products/monitor4.png",
+    "image": "https://img.freepik.com/free-photo/abstract-computer-screen-with-marble-screensaver_53876-145542.jpg?w=1380&t=st=1690584816~exp=1690585416~hmac=48f92d3e71482680c1c2f8d7b2d63f57f546cc68e1e7ac64ee05982f7867d38c",
     "category": "Monitor",
     "price": 299,
     "status": "In Stock",
@@ -667,7 +667,7 @@
   },
   {
     "name": "LG 27GL850-B",
-    "image": "https://example.com/products/monitor1.png",
+    "image": "https://img.freepik.com/free-photo/party-space-ready-online-celebration_23-2149347222.jpg?w=1380&t=st=1690584841~exp=1690585441~hmac=25d030b24d5afc32040b9af84902570384abe15a5e9a1d516d6d7e0c11c407c6",
     "category": "Monitor",
     "price": 449,
     "status": "In Stock",
@@ -693,7 +693,7 @@
   },
   {
     "name": "ASUS TUF Gaming VG27AQ",
-    "image": "https://example.com/products/monitor2.png",
+    "image": "https://img.freepik.com/free-photo/manager-looking-mock-up-green-screen-chroma-key-computer-with-isolated-display-typing-marketing-strategy-planning-business-project-startup-office-businesswoman-working-company-presentation_482257-28290.jpg?w=1480&t=st=1690584861~exp=1690585461~hmac=41b4ecdae786e85cd3089b4aa0447018c2b2c9d0bafc011dcd1f2a419bdaeadb",
     "category": "Monitor",
     "price": 399,
     "status": "In Stock",

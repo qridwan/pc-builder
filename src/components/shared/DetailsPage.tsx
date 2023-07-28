@@ -1,0 +1,92 @@
+/* eslint-disable @next/next/no-img-element */
+import { Avatar, Badge, Button, Card, Col, Descriptions, Divider, Image, List, Rate, Row, Space, Typography } from 'antd';
+import { ArrowLeftOutlined, BackwardFilled, FastBackwardOutlined, HomeFilled, InfoCircleOutlined, PlusCircleOutlined, PlusSquareFilled, StepBackwardOutlined } from '@ant-design/icons'
+import { truncateText } from '@/utils/truncateText';
+import Link from 'next/link';
+import { PcContext } from '@/context/PcContext';
+import { useContext } from 'react';
+import { useRouter } from 'next/router';
+
+
+
+const DeatailsCard = ({ product }: { product: IProduct }) => {
+	const { isPcBuilding, addToPcBuilder } = useContext(PcContext);
+	const router = useRouter();
+	const handleAddToPcBuilder = (pd: IProduct) => {
+		addToPcBuilder(pd);
+		router.push('/pc-build')
+	}
+
+	return (
+
+
+		<div
+			style={{ width: '80%', margin: '0 auto', padding: '20px 0' }}
+
+		>
+			<div style={{ padding: 20 }}>
+				<Button icon={<ArrowLeftOutlined />} onClick={() => router.back()}>
+					Back
+				</Button>
+			</div>
+			<Row justify='center' gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+				<Col className="gutter-row" xl={12} lg={12} md={12} sm={12} xs={24}>
+					<h2 style={{ margin: 5 }}>{(product.name)}</h2>
+					{product.average_rating} <Rate disabled defaultValue={product.average_rating} />
+					<Descriptions >
+						<Descriptions.Item span={24} style={{ padding: "10px 0" }}>{(product.description)}</Descriptions.Item>
+						<Descriptions.Item span={24} label="Price" style={{ paddingBottom: 0 }}>{product.price} $</Descriptions.Item>
+						<Descriptions.Item span={24} label="Status" style={{ paddingBottom: 0 }}>{product.status}</Descriptions.Item>
+					</Descriptions>
+
+					<List
+						header={<div > <strong>Key Features :</strong></div>}
+						// footer={<div>Footer</div>}
+						// bordered
+						dataSource={product.features}
+						renderItem={(item, index) => (
+							<List.Item>
+								<Typography.Text mark>[{index + 1}]</Typography.Text> {item}
+							</List.Item>
+						)}
+					/>
+
+					<Divider></Divider>
+					<List
+						itemLayout="horizontal"
+						header={<div > <strong>Reviews :</strong></div>}
+						dataSource={product.reviews}
+						renderItem={(item, index) => (
+							<List.Item>
+								<List.Item.Meta
+									avatar={<Avatar style={{ backgroundColor: product.color, }}>A/1</Avatar>}
+									title={<div>Anonymous Reviewer</div>}
+									description={<div>{item.message}
+										<br />
+										<Divider style={{ margin: 0 }}></Divider>
+										Rating: <Rate disabled defaultValue={item.rating} />
+									</div>}
+								/>
+							</List.Item>
+						)}
+					/>
+				</Col>
+				<Col className="gutter-row" xl={7} lg={12} md={12} sm={12} xs={24}>
+					<Badge.Ribbon text={product.category} placement='end' color={product.color}>
+						<div><Image
+							width={400}
+							height={300}
+							alt="example"
+							// fill
+							src={product.image}
+						/></div></Badge.Ribbon>
+				</Col>
+			</Row>
+
+
+
+		</div>
+	);
+};
+
+export default DeatailsCard;

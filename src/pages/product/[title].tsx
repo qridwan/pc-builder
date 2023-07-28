@@ -1,13 +1,12 @@
-import ProductCard from "@/components/ProductCard";
-import ProductItems from "@/components/home/ProductItems";
+
 import { env } from "@/utils/envVariables";
-import { useRouter } from "next/router";
+import DeatailsCard from '../../components/shared/DetailsPage';
 
 const Product = ({ product }: { product: IProduct }) => {
 	// const router = useRouter();
 	return (
 		<div>
-			<ProductCard product={product} />
+			<DeatailsCard product={product} />
 		</div>
 	);
 };

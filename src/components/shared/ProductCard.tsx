@@ -1,29 +1,45 @@
 /* eslint-disable @next/next/no-img-element */
-import { Badge, Card, Descriptions, Rate } from 'antd';
-import { InfoCircleOutlined } from '@ant-design/icons'
+import { Badge, Button, Card, Descriptions, Rate, Space } from 'antd';
+import { InfoCircleOutlined, PlusCircleOutlined, PlusSquareFilled } from '@ant-design/icons'
 import { truncateText } from '@/utils/truncateText';
 import Link from 'next/link';
+import { PcContext } from '@/context/PcContext';
+import { useContext } from 'react';
+import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 
 
 const ProductCard = ({ product }: { product: IProduct }) => {
+	const { isPcBuilding, addToPcBuilder } = useContext(PcContext);
+	const router = useRouter();
+	const handleAddToPcBuilder = (pd: IProduct) => {
+		addToPcBuilder(pd);
+		router.push('/pc-build')
+	}
 	return (
 
 		<Badge.Ribbon text={product.category} placement='end' color={product.color}>
 			<Card
 				style={{ width: '100%' }}
 				cover={
-					<img
+					<Image
+						width={400}
+						height={300}
 						alt="example"
 						// fill
-						src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+						src={product.image}
 					/>
 				}
-				actions={[
+				actions={isPcBuilding ? [
 					<Link key="setting" href={`/product/${product?.name}`}>
 						<InfoCircleOutlined key="setting" /></Link>,
-					// <EditOutlined key="edit" />,
-					// <EllipsisOutlined key="ellipsis" />,
+					<Button type='primary' key={'add'} onClick={() => handleAddToPcBuilder(product)}>Add To Builder</Button>
+
+				] : [
+					<Link key="setting" href={`/product/${product?.name}`}>
+						<InfoCircleOutlined key="setting" /> Details</Link>,
+
 				]}
 			>
 				<h4 style={{ margin: 0 }}>{(product.name)}</h4>

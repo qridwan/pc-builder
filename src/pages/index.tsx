@@ -8,11 +8,11 @@ const inter = Inter({ subsets: ['latin'] })
 import { Col, Divider, Row } from 'antd';
 import Meta from 'antd/es/card/Meta'
 import { EditOutlined, EllipsisOutlined, InfoCircleOutlined, MoreOutlined, SettingOutlined } from '@ant-design/icons'
-import ProductCard from '../components/ProductCard'
+import ProductCard from '../components/shared/ProductCard'
 import HomeBanner from '../components/home/HomeBanner'
 import FeaturedCategories from '../components/home/FeaturedCategories'
 import { env } from '@/utils/envVariables'
-import ProductItems from '@/components/home/ProductItems'
+import ProductItems from '@/components/shared/ProductItems'
 
 
 export default function Home({ products }: { products: IProduct[] }) {
