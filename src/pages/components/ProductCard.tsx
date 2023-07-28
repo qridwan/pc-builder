@@ -1,6 +1,6 @@
-import { Avatar, Badge, Card, Descriptions, Rate } from 'antd';
-import { EditOutlined, EllipsisOutlined, InfoCircleOutlined, MoreOutlined, SettingOutlined } from '@ant-design/icons'
-import { Meta } from 'antd/es/card';
+/* eslint-disable @next/next/no-img-element */
+import { Badge, Card, Descriptions, Rate } from 'antd';
+import { InfoCircleOutlined } from '@ant-design/icons'
 
 
 
