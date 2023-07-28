@@ -13,7 +13,7 @@ const headerStyle: React.CSSProperties = {
 	color: '#fff',
 	height: 120,
 	lineHeight: '64px',
-	backgroundColor: '#7dbcea',
+	backgroundColor: '#576ECF',
 	position: 'sticky',
 	top: 0,
 	zIndex: 1,

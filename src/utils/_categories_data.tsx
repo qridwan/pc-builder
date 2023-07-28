@@ -20,11 +20,11 @@ export const categories: MenuProps["items"] = [
 	},
 	{
 		key: "4",
-		label: <Link style={cssStyle} href="/products/power_supply_unit">Power Supply Unit</Link>,
+		label: <Link style={cssStyle} href="/products/power supply unit">Power Supply Unit</Link>,
 	},
 	{
 		key: "5",
-		label: <Link style={cssStyle} href="/products/storage_device">Storage Device</Link>,
+		label: <Link style={cssStyle} href="/products/storage device">Storage Device</Link>,
 	},
 	{
 		key: "6",
