@@ -14,7 +14,7 @@
   dependencies:
     "@ctrl/tinycolor" "^3.4.0"
 
-"@ant-design/cssinjs@^1.13.2":
+"@ant-design/cssinjs@^1.13.2", "@ant-design/cssinjs@^1.16.0":
   version "1.16.0"
   resolved "https://registry.yarnpkg.com/@ant-design/cssinjs/-/cssinjs-1.16.0.tgz#d792b830efb367d3958d28ef6af76fc430b2cf53"
   integrity sha512-T+6btUa3VoiAM1TORZmY4KxsG/L6foUNN22GmSKTt4Jcy/ydxSCTE91Kkz8bWPDBTBZ0sIvJQ+F9EkFM6TInQw==
@@ -32,7 +32,7 @@
   resolved "https://registry.yarnpkg.com/@ant-design/icons-svg/-/icons-svg-4.2.1.tgz#8630da8eb4471a4aabdaed7d1ff6a97dcb2cf05a"
   integrity sha512-EB0iwlKDGpG93hW8f85CTJTs4SvMX7tt5ceupvhALp1IF44SeUFOMhKUOYqpsoYWQKAOuTRDMqn75rEaKDp0Xw==
 
-"@ant-design/icons@^5.1.0":
+"@ant-design/icons@^5.1.0", "@ant-design/icons@^5.1.4":
   version "5.1.4"
   resolved "https://registry.yarnpkg.com/@ant-design/icons/-/icons-5.1.4.tgz#614e29e26d092c2c1c1a2acbc0d84434d8d1474e"
   integrity sha512-YHKL7Jx3bM12OxvtiYDon04BsBT/6LGitYEqar3GljzWaAyMOAD8i/uF1Rsi5Us/YNdWWXBGSvZV2OZWMpJlcA==
