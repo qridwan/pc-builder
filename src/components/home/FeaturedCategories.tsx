@@ -1,8 +1,7 @@
 import { Badge, Button, Card, Col, Divider, Row } from "antd";
-import ProductCard from "../ProductCard";
 import { anton } from "@/pages/_app";
-import { categories } from "@/pages/utils/_categories";
-import IsMobile from "@/pages/hooks/isMobile";
+import IsMobile from "@/hooks/isMobile";
+import { categories } from "@/utils/_categories_data";
 
 const style: React.CSSProperties = { background: '#fff', padding: '0px 0' };
 const gridStyle: React.CSSProperties = {
@@ -44,7 +43,7 @@ const FeaturedCategories = () => {
 			<h1 style={{ textAlign: 'center', padding: '20px 0 0 0', textDecoration: 'underline', fontSize: 40 }} className={anton.className}>🎉 Featured Categories 🎉</h1>
 			<Divider style={{ margin: 20 }} />
 			<Card style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-				{categories?.map((item: any, index) => <Card.Grid key={item?.key} style={isMobileScreen ? mobileStyle : gridStyle}>
+				{categories?.map((item: any) => <Card.Grid key={item?.key} style={isMobileScreen ? mobileStyle : gridStyle}>
 					{item?.label}
 				</Card.Grid>)}
 

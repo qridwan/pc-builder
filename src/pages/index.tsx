@@ -8,10 +8,10 @@ const inter = Inter({ subsets: ['latin'] })
 import { Col, Divider, Row } from 'antd';
 import Meta from 'antd/es/card/Meta'
 import { EditOutlined, EllipsisOutlined, InfoCircleOutlined, MoreOutlined, SettingOutlined } from '@ant-design/icons'
-import ProductCard from './components/ProductCard'
-import HomeBanner from './components/home/HomeBanner'
-import FeaturedItems from './components/home/FeaturedItems'
-import FeaturedCategories from './components/home/FeaturedCategories'
+import ProductCard from '../components/ProductCard'
+import HomeBanner from '../components/home/HomeBanner'
+import FeaturedItems from '../components/home/FeaturedItems'
+import FeaturedCategories from '../components/home/FeaturedCategories'
 
 
 export default function Home() {

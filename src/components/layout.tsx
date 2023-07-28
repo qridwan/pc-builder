@@ -7,7 +7,7 @@ import type { MenuProps } from 'antd';
 import { DownOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import IsMobile from "../hooks/isMobile";
-import { categories } from "../utils/_categories";
+import { categories } from "../utils/_categories_data";
 const headerStyle: React.CSSProperties = {
 	textAlign: 'center',
 	color: '#fff',
