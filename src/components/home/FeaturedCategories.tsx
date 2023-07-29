@@ -1,9 +1,8 @@
-import { Badge, Button, Card, Col, Divider, Row } from "antd";
+import { Card, Divider } from "antd";
 import { anton } from "@/pages/_app";
 import IsMobile from "@/hooks/isMobile";
 import { categories } from "@/utils/_categories_data";
 
-const style: React.CSSProperties = { background: '#fff', padding: '0px 0' };
 const gridStyle: React.CSSProperties = {
 	width: '18%',
 	textAlign: 'center',

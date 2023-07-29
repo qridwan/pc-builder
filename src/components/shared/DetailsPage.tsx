@@ -1,27 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
-import { Avatar, Badge, Button, Card, Col, Descriptions, Divider, Image, List, Rate, Row, Space, Typography } from 'antd';
-import { ArrowLeftOutlined, BackwardFilled, FastBackwardOutlined, HomeFilled, InfoCircleOutlined, PlusCircleOutlined, PlusSquareFilled, StepBackwardOutlined } from '@ant-design/icons'
-import { truncateText } from '@/utils/truncateText';
-import Link from 'next/link';
+import { Avatar, Badge, Button, Col, Descriptions, Divider, Image, List, Rate, Row, Typography } from 'antd';
+import { ArrowLeftOutlined } from '@ant-design/icons'
 import { PcContext } from '@/context/PcContext';
 import { useContext } from 'react';
 import { useRouter } from 'next/router';
+import IsMobile from '@/hooks/isMobile';
 
 
 
 const DeatailsCard = ({ product }: { product: IProduct }) => {
-	const { isPcBuilding, addToPcBuilder } = useContext(PcContext);
+	const { addToPcBuilder } = useContext(PcContext);
+	const { isMobileScreen } = IsMobile();
 	const router = useRouter();
-	const handleAddToPcBuilder = (pd: IProduct) => {
-		addToPcBuilder(pd);
-		router.push('/pc-build')
-	}
 
 	return (
 
 
 		<div
-			style={{ width: '80%', margin: '0 auto', padding: '20px 0' }}
+			style={{ width: isMobileScreen ? '95%' : '80%', margin: '0 auto', padding: '20px 0' }}
 
 		>
 			<div style={{ padding: 20 }}>
@@ -30,6 +26,16 @@ const DeatailsCard = ({ product }: { product: IProduct }) => {
 				</Button>
 			</div>
 			<Row justify='center' gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+				<Col className="gutter-row" xl={0} lg={0} md={0} sm={12} xs={24}>
+					<Badge.Ribbon text={product.category} placement='end' color={product.color}>
+						<Image
+							width={410}
+							height={280}
+							alt={product.category + "-" + product.name}
+							// fill
+							src={product.image}
+						/></Badge.Ribbon>
+				</Col>
 				<Col className="gutter-row" xl={12} lg={12} md={12} sm={12} xs={24}>
 					<h2 style={{ margin: 5 }}>{(product.name)}</h2>
 					{product.average_rating} <Rate disabled defaultValue={product.average_rating} />
@@ -71,12 +77,12 @@ const DeatailsCard = ({ product }: { product: IProduct }) => {
 						)}
 					/>
 				</Col>
-				<Col className="gutter-row" xl={7} lg={12} md={12} sm={12} xs={24}>
+				<Col className="gutter-row" xl={7} lg={12} md={12} sm={12} xs={0}>
 					<Badge.Ribbon text={product.category} placement='end' color={product.color}>
 						<div><Image
 							width={400}
 							height={300}
-							alt="example"
+							alt={product.category + "-" + product.name}
 							// fill
 							src={product.image}
 						/></div></Badge.Ribbon>

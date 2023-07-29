@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Button, Drawer, Menu, Radio, Space } from 'antd';
+import { Button, Drawer, Menu, Space } from 'antd';
 import type { DrawerProps } from 'antd/es/drawer';
 import BrandLogo from "@/assets/images/pc_builder.png";
 import { categories } from '@/utils/_categories_data';
@@ -8,6 +8,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
 import IsMobile from '@/hooks/isMobile';
+import AuthButton from '../auth/AuthButton';
 
 const MobileDrawer = ({ open, setOpen }: { open: boolean, setOpen: Function }) => {
 	const [placement] = useState<DrawerProps['placement']>('right');
@@ -26,17 +27,18 @@ const MobileDrawer = ({ open, setOpen }: { open: boolean, setOpen: Function }) =
 				bodyStyle={{ backgroundColor: "#f0f2f5" }}
 				placement={placement}
 				width={'100%'}
+				style={{ position: 'relative' }}
 				onClose={onClose}
 				open={open}
 				extra={
 					<Space size={30}>
 
 
-						<Button size="large" onClick={() => {
+						{!router.asPath.includes('/pc-build') && <Button size="large" onClick={() => {
 							router.push('/pc-build')
 
 							onClose();
-						}}>PC Builder</Button>
+						}}>PC Builder</Button>}
 
 						<Link href={'/'} onClick={() => {
 							setIsPcBuilding(false)
@@ -57,6 +59,11 @@ const MobileDrawer = ({ open, setOpen }: { open: boolean, setOpen: Function }) =
 					mode="inline"
 					items={categories}
 				/>
+
+
+				<div style={{ position: 'absolute', bottom: "40px", left: '20px' }}>
+					<AuthButton />
+				</div>
 			</Drawer >
 		</>
 	);

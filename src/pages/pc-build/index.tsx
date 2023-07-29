@@ -10,7 +10,6 @@ const PcBuild = () => {
 	const { setIsPcBuilding, pcData, deleteFromPcBuilder, setPcData } = useContext(PcContext);
 	const { isMobileScreen } = IsMobile();
 	const [modal, contextHolder] = Modal.useModal();
-
 	const countDown = () => {
 		let secondsToGo = 5;
 
@@ -49,6 +48,7 @@ const PcBuild = () => {
 
 	return (
 		<div style={{ width: isMobileScreen ? "100%" : "80%", margin: '0 auto' }}>
+
 			<h1 style={{ textAlign: 'center', padding: isMobileScreen ? '5px 0' : '20px 0 0 0', textDecoration: 'underline', fontSize: isMobileScreen ? 30 : 40 }} className={anton.className}>🎉 Make Your Dream PC 🎉</h1>
 			{contextHolder}
 			<List
@@ -107,7 +107,6 @@ const PcBuild = () => {
 };
 
 export default PcBuild;
-
 const data = [
 	{
 		id: 1,
