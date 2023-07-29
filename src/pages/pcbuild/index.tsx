@@ -1,9 +1,9 @@
 import { Badge, Button, Divider, List, Modal, Skeleton } from "antd";
-import { anton } from "../_app";
 import { useRouter } from "next/router";
 import { useContext } from "react";
 import { PcContext } from "@/context/PcContext";
 import IsMobile from "@/hooks/isMobile";
+import { anton } from "../_app";
 
 const PcBuild = () => {
 	const router = useRouter();

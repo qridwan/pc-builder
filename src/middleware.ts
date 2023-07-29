@@ -9,4 +9,4 @@ export default withAuth(function middleware(req) {}, {
   secret: process.env.NEXTAUTH_SECRET,
 });
 
-export const config = { matcher: ["/pc-build"] }; // restrict to /pc-build
+export const config = { matcher: ["/pcbuild"] }; // restrict to /pcbuild

@@ -34,8 +34,8 @@ const MobileDrawer = ({ open, setOpen }: { open: boolean, setOpen: Function }) =
 					<Space size={30}>
 
 
-						{!router.asPath.includes('/pc-build') && <Button size="large" onClick={() => {
-							router.push('/pc-build')
+						{!router.asPath.includes('/pcbuild') && <Button size="large" onClick={() => {
+							router.push('/pcbuild')
 
 							onClose();
 						}}>PC Builder</Button>}

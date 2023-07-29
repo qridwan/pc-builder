@@ -8,7 +8,7 @@ export const getProductsJson = async () => {
   const fileContent = await fs.readFileSync(filePath, "utf-8");
 
   // Parse the JSON data
-  const productsData = await JSON.parse(fileContent);
+  const productsData = fileContent ? await JSON.parse(fileContent) : [];
 
   return productsData;
 };

@@ -62,7 +62,7 @@ const MainLayout = ({ children }: { children: ReactNode }) => {
 
 				{!isMobileScreen && <div>
 					<AuthButton />
-					{!router.asPath.includes('/pc-build') && <Button ghost size="large" onClick={() => router.push('/pc-build')}>PC Builder</Button>}
+					{!router.asPath.includes('/pcbuild') && <Button ghost size="large" onClick={() => router.push('/pc-build')}>PC Builder</Button>}
 				</div>}
 			</Header>
 			<Content style={{ padding: isMobileScreen ? '0 5px' : '0 50px' }}>

@@ -12,6 +12,7 @@ export default async function handler(
 
     // Check if there are query parameters for title and category
     const { title, category } = req.query;
+    console.log("title: ", title);
 
     if (title && typeof title === "string") {
       // Search for products with a matching title

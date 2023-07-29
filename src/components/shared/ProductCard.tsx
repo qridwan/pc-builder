@@ -15,7 +15,7 @@ const ProductCard = ({ product }: { product: IProduct }) => {
 	const router = useRouter();
 	const handleAddToPcBuilder = (pd: IProduct) => {
 		addToPcBuilder(pd);
-		router.push('/pc-build')
+		router.push('/pcbuild')
 	}
 	return (
 
