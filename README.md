@@ -11,8 +11,7 @@ A clean and straightforward PC Builder website for PC parts and components, buil
 - [Installation](#installation)
 - [Protected Routes](#protected-routes)
 - [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
