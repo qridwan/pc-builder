@@ -29,7 +29,7 @@ const DeatailsCard = ({ product }: { product: IProduct }) => {
 				<Col className="gutter-row" xl={0} lg={0} md={0} sm={12} xs={24}>
 					<Badge.Ribbon text={product.category} placement='end' color={product.color}>
 						<Image
-							width={410}
+							width={310}
 							height={280}
 							alt={product.category + "-" + product.name}
 							// fill
@@ -65,12 +65,12 @@ const DeatailsCard = ({ product }: { product: IProduct }) => {
 						renderItem={(item, index) => (
 							<List.Item>
 								<List.Item.Meta
-									avatar={<Avatar style={{ backgroundColor: product.color, }}>A/1</Avatar>}
-									title={<div>Anonymous Reviewer</div>}
+									avatar={<Avatar style={{ backgroundColor: product.color, }}>A{index + 1}</Avatar>}
+									title={<div>Anonymous</div>}
 									description={<div>{item.message}
 										<br />
-										<Divider style={{ margin: 0 }}></Divider>
-										Rating: <Rate disabled defaultValue={item.rating} />
+										{/* <Divider style={{ margin: 0 }}></Divider> */}
+										<b>Rating: </b> <Rate disabled defaultValue={item.rating} />
 									</div>}
 								/>
 							</List.Item>

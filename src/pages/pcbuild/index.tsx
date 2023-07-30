@@ -54,7 +54,7 @@ const PcBuild = () => {
 			<List
 				size="large"
 				header={<div>Add Required Components</div>}
-				footer={<div style={{ textAlign: 'end', fontWeight: 'bold' }}>Total Cost: {countCost() ?? 0}
+				footer={<div style={{ textAlign: 'end', fontWeight: 'bold' }}>Total Cost: {countCost() ?? 0} $
 					<Button color="green" type="primary" size="large" disabled={(pcData === null || pcData?.length <= 6)} style={{ marginLeft: '20px', }} onClick={() => {
 						countDown();
 
@@ -84,9 +84,9 @@ const PcBuild = () => {
 
 								{isMobileScreen && findComponent(item.title) && <div>
 									<Divider></Divider>
-									Price: {findComponent(item.title)?.price}
+									Price: {findComponent(item.title)?.price} $
 									<br />
-									Ratings: {findComponent(item.title)?.average_rating}
+									Ratings: {findComponent(item.title)?.average_rating} ⭐
 
 								</div>}
 
@@ -94,9 +94,9 @@ const PcBuild = () => {
 						/>
 						{!isMobileScreen && findComponent(item.title) && <div>
 							<Divider></Divider>
-							Price: {findComponent(item.title)?.price}
+							Price: {findComponent(item.title)?.price} $
 							<br />
-							Ratings: {findComponent(item.title)?.average_rating}
+							Ratings: {findComponent(item.title)?.average_rating} ⭐
 
 						</div>}
 					</Skeleton>

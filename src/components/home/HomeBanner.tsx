@@ -14,12 +14,12 @@ const HomeBanner = () => {
 
 			<Col className="gutter-row" md={10} sm={0} xs={0}>
 				<div >
-					<Image src={BannerImage} alt="Welcome to Pc Builder"></Image>
+					<Image src={BannerImage} width={300} alt="Welcome to Pc Builder"></Image>
 				</div>
 			</Col>
 			<Col className="gutter-row" sm={24} md={12}>
 				<div style={{ color: 'white' }}>
-					{isMobileScreen ? <h2 className={anton.className} style={{ fontSize: 40, margin: 0 }}>Craft Your Perfect PC</h2> : <TypeAnimation
+					{isMobileScreen ? <h2 className={anton.className} style={{ fontSize: 30, margin: 0 }}>Craft Your Perfect PC</h2> : <TypeAnimation
 						sequence={[
 							// Same substring at the start will only be typed once, initially
 							'Craft Your Perfect PC',
@@ -30,7 +30,7 @@ const HomeBanner = () => {
 							4000,
 						]}
 						speed={10}
-						style={{ fontSize: 70 }}
+						style={{ fontSize: 60 }}
 						className={anton.className}
 						repeat={Infinity}
 					/>}

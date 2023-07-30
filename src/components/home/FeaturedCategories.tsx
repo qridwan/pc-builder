@@ -10,7 +10,7 @@ const gridStyle: React.CSSProperties = {
 	alignItems: 'center',
 	justifyContent: 'center',
 	margin: '5px',
-	background: '#E68DAE',
+	background: '#F48BB2',
 	color: 'white',
 	fontSize: 24,
 	fontWeight: 'bold',
@@ -26,7 +26,7 @@ const mobileStyle: React.CSSProperties = {
 	alignItems: 'center',
 	justifyContent: 'center',
 	margin: '5px',
-	background: '#E68DAE',
+	background: '#F48BB2',
 	color: 'white',
 	fontSize: 24,
 	fontWeight: 'bold',
@@ -41,7 +41,7 @@ const FeaturedCategories = () => {
 		<div>
 			<h1 style={{ textAlign: 'center', padding: '20px 0 0 0', textDecoration: 'underline', fontSize: 40 }} className={anton.className}>🎉 Featured Categories 🎉</h1>
 			<Divider style={{ margin: 20 }} />
-			<Card style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+			<Card style={{ display: 'flex', justifyContent: 'center', width: '100%', border: 'none' }}>
 				{categories?.map((item: any) => <Card.Grid key={item?.key} style={isMobileScreen ? mobileStyle : gridStyle}>
 					{item?.label}
 				</Card.Grid>)}

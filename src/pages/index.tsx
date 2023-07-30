@@ -34,5 +34,6 @@ export async function getStaticProps() {
 		props: {
 			products,
 		},
+		revalidate: 10, // in 10 seconds the page will be revalidated
 	}
 }
